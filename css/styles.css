@@ -117,6 +117,8 @@ body {
 }
 
 .contact-link {
+  display: inline-flex;
+  align-items: center;
   color: var(--header-secondary-color);
   padding-top: 32px;
   padding-bottom: 32px;
@@ -125,6 +127,7 @@ body {
 .main-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .site-nav {
@@ -138,11 +141,18 @@ body {
 .contact-list {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 
 .contact-list .list-item:not(:last-child) {
   margin-right: 50px;
 }
+
+.contact-icon {
+  fill: currentcolor;
+  margin-right: 10px;
+}
+
 /*--- Hero styles ---*/
 
 .hero {
