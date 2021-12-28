@@ -28,6 +28,7 @@
   --hero-border: #000000;
   --link-icon-color: #afb1b8;
   --icon-margin: 30px;
+  --follow-link-bg: rgba(255, 255, 255, 0.1);
 }
 
 /* ---Global classes and selectors--- */
@@ -334,7 +335,9 @@ body {
   margin-right: 10px;
 }
 .social-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   padding: 12px;
@@ -367,12 +370,15 @@ body {
 }
 .client-link {
   color: var(--link-icon-color);
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 92px;
-  width: 100%;
+  max-width: 100%;
   padding: 16px 32px;
   border: 1px solid var(--link-icon-color);
   border-radius: 4px;
+  border-width: 1px;
 }
 .client-link:hover,
 .client-link:focus {
@@ -381,8 +387,8 @@ body {
 }
 .client-icon {
   fill: currentColor;
-  width: 103px;
-  height: 60px;
+  max-width: 100px;
+  max-height: 60px;
 }
 /* ---Footer--- */
 
@@ -440,6 +446,11 @@ body {
 }
 .social-link.link.follow-link {
   color: var(--address-color);
+  background-color: var(--follow-link-bg);
+}
+.social-link.link.follow-link:hover,
+.social-link.link.follow-link:focus {
+  background-color: var(--scnd-bckgrnd-btn-hover-focus-color);
 }
 
 /*---NEXT PAGE---
